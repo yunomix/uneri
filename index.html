@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顔をうねらせる</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a fun look -->
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>顔をうねらせる</h1>
+        <div class="canvas-wrapper">
+            <canvas id="glCanvas"></canvas>
+            <div id="upload-overlay" class="upload-overlay">
+                <p>ドラッグ＆ドロップ<br>または<br>下のボタンで写真を選択</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="selectBtn" class="pop-btn">写真を選ぶ</button>
+        </div>
+
+        <p class="instruction">
+            マウス/指で写真を<strong>ぐりぐり</strong>ドラッグしよう！<br>
+            ぐりぐりするとうねりまくる！
+        </p>
+
+        <!-- Hidden input -->
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
